@@ -131,7 +131,7 @@ SoftwareTestProject/
             <artifactId>json-path</artifactId>
             <version>4.5.1</version>
         </dependency>
-    </dependencies>
+</dependencies>
 ```
 
 ## 📝 Örnek Test Çıktısı
