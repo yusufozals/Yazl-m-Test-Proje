@@ -28,7 +28,7 @@ Bu proje, Java ile REST API testleri yazmayı öğrenmek için hazırlanmış ba
 
 1. Projeyi klonlayın:
 ```bash
-git clone <repository-url>
+git clone https://github.com/yusufozals/Yazl-m-Test-Proje.git
 cd SoftwareTestProject
 ```
 
@@ -98,30 +98,40 @@ SoftwareTestProject/
 
 ```xml
 <dependencies>
-    <!-- REST Assured -->
-    <dependency>
-        <groupId>io.rest-assured</groupId>
-        <artifactId>rest-assured</artifactId>
-        <version>5.3.0</version>
-        <scope>test</scope>
-    </dependency>
-    
-    <!-- JUnit 5 -->
-    <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>5.9.2</version>
-        <scope>test</scope>
-    </dependency>
-    
-    <!-- JUnit 4 (compatibility) -->
-    <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>4.13.2</version>
-        <scope>test</scope>
-    </dependency>
-</dependencies>
+        <!--  Rest Assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>4.5.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.9.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.3.0</version>
+            <scope>test</scope>
+        </dependency>
+        <!--  JUnit 4 (test framework) -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!--  JSON Path (response verilerini ayrıştırmak için) -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-path</artifactId>
+            <version>4.5.1</version>
+        </dependency>
+    </dependencies>
 ```
 
 ## 📝 Örnek Test Çıktısı
